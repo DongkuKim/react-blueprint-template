@@ -7,6 +7,7 @@ trigger: always_on
 ## 1. Mandatory Testing
 
 - **Execution**: Before completing any task or creating a Pull Request, you MUST run the test suite.
+- **Framework**: Use the repository Jest command (`pnpm run test`).
 - **Commands**:
   - Unit tests: `pnpm run test`
 - **Zero Tolerance**: Do not propose changes or finalize tasks if tests are failing.
@@ -20,4 +21,4 @@ trigger: always_on
 ## 3. Code Style & Quality
 
 - **Linting & Formatting**: Codebase must be clean and formatted using `eslint` and `prettier`.
-- **Pre-Commit**: Always run `pnpm run lint` and `pnpm exec prettier --write .` before committing.
+- **Pre-Commit**: Always run `pnpm run lint`, `pnpm run test`, and `pnpm exec prettier --write .` before committing.
