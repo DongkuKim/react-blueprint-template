@@ -2,6 +2,8 @@
 
 A lightweight React starter migrated from Next.js to **React + TypeScript**, with **Blueprint by Palantir** as the primary UI styling kit.
 
+This template intentionally does **not** use Parcel or Vite.
+
 ## Stack
 
 - React 19
