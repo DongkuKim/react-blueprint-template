@@ -4,17 +4,91 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>React Blueprint Template</title>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/normalize.css@8.0.1/normalize.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/@blueprintjs/core@6/lib/css/blueprint.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@blueprintjs/core@6/lib/css/blueprint.css" />
+    <style>
+      body {
+        margin: 0;
+        background: #1c2127;
+      }
+
+      .app-shell {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 24px 16px 40px;
+        display: grid;
+        gap: 16px;
+      }
+
+      .hero-actions {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+
+      .feature-grid {
+        display: grid;
+        gap: 12px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      }
+
+      .feature-card {
+        min-height: 140px;
+      }
+    </style>
   </head>
   <body class="bp5-dark">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <header class="bp5-navbar">
+      <div class="bp5-navbar-group bp5-align-left">
+        <div class="bp5-navbar-heading">Blueprint Sample UI</div>
+        <span class="bp5-navbar-divider"></span>
+        <span class="bp5-tag bp5-minimal bp5-intent-primary">React Blueprint Template</span>
+      </div>
+    </header>
+
+    <main class="app-shell">
+      <section class="bp5-card bp5-elevation-2">
+        <h1 class="bp5-heading">Welcome to Blueprint</h1>
+        <p>
+          This page demonstrates a practical, composable UI using Blueprint primitives with semantic
+          intent styles, clear hierarchy, and accessible controls.
+        </p>
+        <div class="hero-actions">
+          <a class="bp5-button" href="https://blueprintjs.com/docs/#blueprint" target="_blank" rel="noreferrer">Blueprint docs</a>
+          <a class="bp5-button bp5-intent-primary" href="https://blueprintjs.com/docs/#blueprint/principles.api-contract" target="_blank" rel="noreferrer">API contract principles</a>
+        </div>
+      </section>
+
+      <section class="feature-grid" aria-label="Blueprint best-practice samples">
+        <article class="bp5-card bp5-elevation-1 feature-card">
+          <h3 class="bp5-heading">Composable layout</h3>
+          <p>Cards and callouts provide consistent structure for grouped content and actions.</p>
+          <button type="button" class="bp5-button bp5-small">Learn more</button>
+        </article>
+
+        <article class="bp5-card bp5-elevation-1 feature-card">
+          <h3 class="bp5-heading">Semantic intent</h3>
+          <p>Use intent classes to express meaning and reduce ambiguous actions.</p>
+          <span class="bp5-tag bp5-intent-success">Healthy</span>
+          <span class="bp5-tag bp5-intent-warning">Needs review</span>
+        </article>
+
+        <article class="bp5-card bp5-elevation-1 feature-card">
+          <h3 class="bp5-heading">Accessible controls</h3>
+          <label class="bp5-label" for="sample-input">
+            Project name
+            <input id="sample-input" class="bp5-input" type="text" placeholder="Blueprint starter" />
+          </label>
+        </article>
+      </section>
+
+      <section class="bp5-callout bp5-intent-success" aria-label="Blueprint credit">
+        <h5 class="bp5-heading">Credit</h5>
+        <p>
+          Visual language and components are based on
+          <a href="https://github.com/palantir/blueprint" target="_blank" rel="noreferrer"> Blueprint by Palantir</a>.
+        </p>
+      </section>
+    </main>
   </body>
 </html>
