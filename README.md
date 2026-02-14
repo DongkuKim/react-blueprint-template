@@ -1,79 +1,34 @@
-# Next.js Antigravity Template
+# React Blueprint Template
 
-This is a Next.js 16 template initialized with `create-next-app`, optimized for rapid development with modern tooling.
+A lightweight React starter migrated from Next.js to **React + TypeScript**, with **Blueprint by Palantir** as the primary UI styling kit.
 
-## Tech Stack
+## Stack
 
-This template is built with the following core technologies:
+- React 19
+- TypeScript 5
+- Jest command (`pnpm test`) for unit checks
+- Blueprint styling (`bp5-*` classes + official Blueprint stylesheet)
+- ESLint + Prettier
 
-- **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
-- **Language**: [TypeScript](https://www.typescriptlang.org/)
-- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
-- **Package Manager**: [pnpm](https://pnpm.io/)
-- **Linting & Formatting**: [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/)
-
-## Prerequisites
-
-Ensure you have the following installed:
-
-- Node.js (LTS recommended)
-- pnpm (v10+)
-
-## Getting Started
-
-1.  **Clone the repository:**
-
-    ```bash
-    git clone https://github.com/DongkuKim/nextjs-antigravity-template.git
-    cd nextjs-antigravity-template
-    ```
-
-2.  **Install dependencies:**
-
-    ```bash
-    pnpm install
-    ```
-
-3.  **Start the development server:**
-
-    ```bash
-    pnpm run dev
-    ```
-
-    Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## Available Scripts
-
-| Script                         | Description                                      |
-| :----------------------------- | :----------------------------------------------- |
-| `pnpm run dev`                 | Starts the development server with Turbopack.    |
-| `pnpm run build`               | Builds the application for production.           |
-| `pnpm run start`               | Starts the production server.                    |
-| `pnpm run lint`                | Runs ESLint to identify code quality issues.     |
-| `pnpm exec prettier --write .` | Formats all files in the project using Prettier. |
-
-## Project Structure
+## Getting started
 
 ```bash
-.
-├── src/
-│   └── app/          # App Router directory
-├── public/           # Static assets
-├── .agent/           # Agentic workflows and skills
-├── next.config.ts    # Next.js configuration
-├── tailwind.config.ts # Tailwind CSS configuration (if separate) or internal
-├── tsconfig.json     # TypeScript configuration
-├── package.json      # Project dependencies and scripts
-└── README.md         # Project documentation
+pnpm install
+pnpm dev
 ```
 
-## Learn More
+Then open <http://localhost:1234>.
 
-To learn more about Next.js, take a look at the following resources:
+## Scripts
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `pnpm dev` — run a local static dev server
+- `pnpm build` — run TypeScript checks
+- `pnpm preview` — run a local static preview server
+- `pnpm lint` — run ESLint
+- `pnpm test` — run Jest command (backed by Node test runner in this environment)
 
-## License
+## Blueprint references
 
-MIT
+- Docs: <https://blueprintjs.com/docs/#blueprint>
+- API contract principles: <https://blueprintjs.com/docs/#blueprint/principles.api-contract>
+- Source / credit: **Blueprint by Palantir** — <https://github.com/palantir/blueprint>
