@@ -1,13 +1,12 @@
 # React Blueprint Template
 
-A lightweight React starter migrated from Next.js to **React + TypeScript**, with **Blueprint by Palantir** as the primary UI styling kit.
+A lightweight React starter migrated from Next.js, with **Blueprint by Palantir** as the primary UI styling kit.
 
 This template intentionally does **not** use Parcel or Vite.
 
 ## Stack
 
-- React 19
-- TypeScript 5
+- React 19 (loaded as browser ESM modules)
 - Jest command (`pnpm test`) for unit checks
 - Blueprint styling (`bp5-*` classes + official Blueprint stylesheet)
 - ESLint + Prettier
@@ -24,7 +23,7 @@ Then open <http://localhost:1234>.
 ## Scripts
 
 - `pnpm dev` — run a local static dev server
-- `pnpm build` — run TypeScript checks
+- `pnpm build` — run JavaScript syntax checks
 - `pnpm preview` — run a local static preview server
 - `pnpm lint` — run ESLint
 - `pnpm test` — run Jest command (backed by Node test runner in this environment)
